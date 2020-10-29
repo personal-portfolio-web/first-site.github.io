@@ -165,7 +165,7 @@ body{
 }
 .wrap_first_section{
     @extend %box;
-    height: 500px;
+    height: 450px;
     
     p{
         font-family: $fontOpenSans;
@@ -249,7 +249,7 @@ body{
     outline: none;
     cursor: pointer;
     position: absolute;
-    bottom: 55px;
+    bottom: 13px;
     
     &:hover{
         background-color: rgb(234, 234, 253);
@@ -313,7 +313,7 @@ body{
             margin-left: 55px;
             .styles{
                 left: 34%;
-                bottom: 12%;
+                bottom: 5%;
             }
             p{  
                 display: inline-block;

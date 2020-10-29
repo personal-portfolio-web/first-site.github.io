@@ -1,15 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
-        <link rel="stylesheet" href="styles/styles.css">
-        <title>Contact Page</title>
-    </head>
-    <body>
+
         <header>
             <nav>
                 <div class="header_innerPage">
@@ -18,9 +7,9 @@
                             <a href="" class="logo">Webworld</a>
                             <div class="nav_btns">
                                 <ul>
-                                    <li><a href="index.html" class="home">Home</a></li>
-                                    <li><a href="innerPage.html">Portfolio</a></li>
-                                    <li><a href="contactPage.html">Contact</a></li>
+                                    <li><a href="index.html">Home</a></li>
+                                <li><a class="innerPage" onclick="ajax('innerPage')">Portfolio</a></li>
+                                <li><a class="contactPage" onclick="ajax('contactPage')">Contact</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -154,12 +143,6 @@
             </div>
         </footer>
 
-        <script
-            src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
-            integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
-            crossorigin="anonymous"></script>
-       
-        <script src="script/script.js"></script>
         <script src="script/form.js"></script>
-    </body>
-</html>
+        <script src="script/script.js"></script>
+   

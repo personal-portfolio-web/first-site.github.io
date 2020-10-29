@@ -715,7 +715,7 @@ body ul, body ol, body li, body a {
 }
 
 .wrap_first_section {
-  height: 500px;
+  height: 450px;
 }
 
 .wrap_first_section p {
@@ -807,7 +807,7 @@ body ul, body ol, body li, body a {
   outline: none;
   cursor: pointer;
   position: absolute;
-  bottom: 55px;
+  bottom: 13px;
 }
 
 .styles:hover {
@@ -886,7 +886,7 @@ body ul, body ol, body li, body a {
 
 .wrap_second_section .section_wrap_content .second_section__text .styles {
   left: 34%;
-  bottom: 12%;
+  bottom: 5%;
 }
 
 .wrap_second_section .section_wrap_content .second_section__text p {

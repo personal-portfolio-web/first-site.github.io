@@ -72,16 +72,16 @@ $('.tags a').click(function (e) {
     $(this).css({'display' : 'none'})
 });
 
-$('.home').click(function () { 
-
-        let xhr = new XMLHttpRequest()
-            xhr.open('GET', 'index.html')
-            xhr.send()
-            xhr.onload= () =>{
-                let data = JSON.parse( xhr.responseText  )
-                console.log( data ) 
-        }
+    function ajax(page){
+    let xhr = new XMLHttpRequest()
+        xhr.open('GET', `${page}.html`)
+        xhr.send()
+  
+        xhr.onload =  () =>{
         
-            
-        
-});
+        document.body.innerHTML = '';
+        document.body.innerHTML = xhr.responseText;
+      }
+    }
+    
+  

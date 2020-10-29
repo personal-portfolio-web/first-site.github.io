@@ -19,9 +19,9 @@
                         <a href="index.html" class="logo">Webworld</a>
                         <div class="nav_btns">
                             <ul>
-                                <<li><a href="index.html" class="home">Home</a></li>
-                                <li><a href="innerPage.html">Portfolio</a></li>
-                                <li><a href="contactPage.html">Contact</a></li>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a class="innerPage" onclick="ajax('innerPage')">Portfolio</a></li>
+                                <li><a class="contactPage" onclick="ajax('contactPage')">Contact</a></li>
                             </ul>
                           </div>
                         </div>
@@ -235,7 +235,7 @@
         $('.lightzoom').lightzoom({speed: 400, viewTitle: true , overlayOpacity : 0.4, isWindowClickClosing: true,});
         </script>
 
-
+        <script src="script/form.js"></script>
         <script src="script/script.js"></script>
     </body>
 </html>
