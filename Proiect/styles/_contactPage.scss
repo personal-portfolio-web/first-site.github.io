@@ -1,0 +1,215 @@
+$fontPacifico: 'Pacifico', cursive;
+$fontOpenSans: 'Open Sans', sans-serif;
+
+%box{
+    max-width: 1025px;
+    margin: 0 auto;
+}
+.bar{
+    width: 100%;
+    height: 1px;
+    background-color: #e1e1e1;
+    display: inline-block; 
+    position: relative;
+    margin: 30px 0;
+  }
+  @mixin incon($icon) {
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 600; 
+    content: $icon;
+    color: #71b6d5;
+    font-size: 30px;
+    left: 47%;
+    top: -20px;
+    position: relative;
+    background-color: #fff;
+    border-radius: 100%;
+    border: 15px solid transparent;
+  }
+
+.header_innerPage {
+    background-image: radial-gradient(rgba(19, 5, 35, .5),rgba(19, 5, 35, .5)),url('../img/header_contactPage.png');
+    background-repeat: no-repeat;
+    background-size: 100% 371px;
+    height: 371px;
+    .container {
+        @extend %box;
+        .wrap::after {
+            content: '';
+            width: 100%;
+            height: 1px;
+            background-color: #7c7c7c;
+            display: inline-block;
+        }
+        .logo {
+            font-family: $fontPacifico;
+            font-size: 30px;
+            color: #ffffff;
+            float: left;
+            margin: 30px 0 0;
+        }
+        .nav_btns {
+            float: right;
+            margin: 30px 0 0;
+            ul {
+                li {
+                    display: inline-block;
+                    &:nth-child(2) {
+                        padding: 0 40px;
+                    }
+                    a {
+                        font-family: $fontOpenSans;
+                        font-size: 14.5px;
+                        color: #ffffff;
+                        &:hover{
+                            color: #6efd9e;
+                        }  
+                    }
+                }
+            }
+
+        }
+        .header_title{
+            text-align: center;
+            h1{
+                font-family: $fontOpenSans;
+                font-size: 40px;
+                line-height: 1.2;
+                font-weight: 700;
+                color: #ffffff;
+                margin: 9% 0 0 0;
+            }
+            h2{
+                font-size: 22px;
+                font-weight: 400;
+                font-family: $fontOpenSans;
+                color: #ffffff;
+                margin: 0;
+            }
+        }
+    }
+}
+.contacts{
+    @extend %box;
+    height: 460px;
+    .bar{
+        &::after {
+            @include incon("\f3c5");
+           
+        }
+        margin: 80px 0 0 0;
+    }
+    h1{
+        text-align: center;
+        font-family: $fontOpenSans;
+        font-size: 24px;
+        font-weight: 400;
+        text-transform: uppercase;
+        color: #484848;
+        margin: 0 0 40px 0;
+    }
+    .contacts_items{
+        display: flex;
+        justify-content: space-between;
+        .items{
+            text-align: center;
+            span{
+                background-color: #71b6d5;
+                display: inline-block;
+                width: 63px;
+                height: 63px;
+                border-radius: 100%;
+                i{
+                    font-family: "Font Awesome 5 Free"; 
+                    font-size: 28px;
+                    line-height: 63px;
+                    
+                    color: #ffffff;
+                }
+            }
+            p{
+                font-family: $fontOpenSans;
+                font-size: 13.5px;
+                font-weight: 400;
+                color: #7c7770;
+                margin: 0;
+            }
+        }
+    }
+}
+.section_form{
+    @extend %box;
+    height: 555px;
+    .bar{
+        
+        &::after {
+            @include incon("\f0e0");
+            font-size: 36px;
+            
+        }
+    }
+    h1{
+        text-align: center;
+        font-family: $fontOpenSans;
+        font-size: 24px;
+        font-weight: 400;
+        text-transform: uppercase;
+        color: #484848;
+        margin: 0 0 45px 0;
+    }
+    form{
+        text-align: center;
+        input{
+        background-color: #f5f5f5;
+        border: 1px solid #e2e2e2;
+        padding: 12px 15px;
+        border-radius: 7px;
+        width: 256px;
+        box-sizing: border-box;
+        outline: none;
+        
+        &::placeholder{
+            font-family: $fontOpenSans;
+            font-size: 13.5px;
+            line-height: 20px;
+            font-weight: 400;
+            color: #ababab;
+          }
+        }
+        input[type="text"]{
+            margin-right: 45px;
+        }
+        textarea{
+            box-sizing: border-box;
+            font-family: $fontOpenSans;
+            background-color: #f5f5f5;
+            border: 1px solid #e2e2e2;
+            display: block;
+            margin: 7px auto;
+            width: 528px;
+            height: 242px;
+            padding: 10px;
+            border-radius: 7px;
+            outline: none;
+            &::placeholder{
+                font-family: $fontOpenSans;
+                font-size: 13.5px;
+                line-height: 20px;
+                font-weight: 400;
+                color: #ababab;
+                padding: 10px;
+            }
+        }
+        button{
+            width: 526px;
+            height: 42px;
+            background-color: #71b6d5;
+            font-family: $fontOpenSans;
+            font-size: 18px;
+            font-weight: 600;
+            color: #ffffff;
+            border: none;
+            border-radius: 7px;
+        }
+    }
+}
