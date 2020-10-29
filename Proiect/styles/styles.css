@@ -470,10 +470,6 @@
   outline: none;
 }
 
-.section_form form input:first-child {
-  margin-right: 10px;
-}
-
 .section_form form input::-webkit-input-placeholder {
   font-family: "Open Sans", sans-serif;
   font-size: 13.5px;
@@ -504,6 +500,10 @@
   line-height: 20px;
   font-weight: 400;
   color: #ababab;
+}
+
+.section_form form input[name="name"] {
+  margin-right: 10px;
 }
 
 .section_form form textarea {
