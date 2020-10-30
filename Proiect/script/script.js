@@ -67,12 +67,15 @@ function toggle(selector, button) {
         $(selectorButton).html('READ MORE');
     }
 };
-$('.tags a').click(function (e) { 
-    e.preventDefault();
+
+
+
+$('.tags a').click(function () { 
     $(this).css({'display' : 'none'})
 });
 
-    function ajax(page){
+
+function ajax(page){
     let xhr = new XMLHttpRequest()
         xhr.open('GET', `${page}.html`)
         xhr.send()
@@ -82,6 +85,6 @@ $('.tags a').click(function (e) {
         document.body.innerHTML = '';
         document.body.innerHTML = xhr.responseText;
       }
-    }
+    };
     
   
