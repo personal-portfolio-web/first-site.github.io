@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: 
+Disallow: http://ca-construct.fr/404.html
+Host: www.ca-construct.fr
+Sitemap: http://ca-construct.fr/Sitemap.xml
